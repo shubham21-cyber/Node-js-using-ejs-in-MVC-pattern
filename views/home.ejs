@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href='/css/mystyle.css'>
+</head>
+
+<body>
+    <h1 id='h11'> Electronics </h1>
+    <% for(let item of products) { %>
+        <div>
+            <h2>
+                <%= item.title %>
+            </h2>
+            <a href='/details/<%= item.productId %>'>Detail view </a>
+        </div>
+        <%} %>
+</body>
+
+</html>
